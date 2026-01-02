@@ -1,5 +1,6 @@
 import { useRef } from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
+import { Link } from 'react-router-dom';
 import DotMap from '../ui/DotMap';
 
 export default function Hero() {
@@ -35,9 +36,9 @@ export default function Hero() {
            <p className="text-[1.1rem] md:text-[1.5rem] leading-[1.4] text-white/90">
              We manage digital identities for brands like <b>SNK</b>, <b>Tapasya</b>, and <b>IMB360</b>. 
              From AI avatars to Meta ads—we handle it all, perfectly.
-             <a href="#about" className="ml-2 text-text-dim hover:text-white transition-colors text-[1.2rem]">
+             <Link to="/values" className="ml-2 text-text-dim hover:text-white transition-colors text-[1.2rem]">
                Learn More →
-             </a>
+             </Link>
            </p>
         </div>
       </div>

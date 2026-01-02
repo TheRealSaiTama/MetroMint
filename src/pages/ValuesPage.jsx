@@ -66,13 +66,13 @@ export default function ValuesPage() {
     {
       name: "Keshav Kumar Jha",
       role: "Founder",
-      color: "bg-[#00ff00]",
+      image: "/keshav.jpg",
       bio: "Keshav founded MetroMint to help creators and startups build authentic brands through strategic AI-powered content and automation."
     },
     {
       name: "Aakriti Kaushik",
       role: "Co-Founder & Creative Director",
-      color: "bg-[#ff00ff]",
+      image: "/aakriti.jpg",
       bio: "Aakriti leads our creative vision, ensuring every piece of content tells a compelling story that resonates with audiences."
     }
   ];
@@ -180,12 +180,12 @@ export default function ValuesPage() {
                 transition={{ duration: 0.8, delay: index * 0.15, ease: [0.16, 1, 0.3, 1] }}
                 className="flex-1 text-center"
               >
-                <div className={`w-24 h-24 mx-auto mb-6 rounded-full ${member.color} flex items-center justify-center`}>
-                  <div className="w-16 h-16 rounded-full border-2 border-white/30 flex items-center justify-center">
-                    <span className="text-white font-display font-bold text-2xl">
-                      {member.name.split(' ').map(n => n[0]).join('')}
-                    </span>
-                  </div>
+                <div className="w-32 h-32 mx-auto mb-6 rounded-full overflow-hidden border-2 border-white/20">
+                  <img 
+                    src={member.image} 
+                    alt={member.name}
+                    className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500"
+                  />
                 </div>
                 <h3 className="font-display font-semibold text-2xl text-white mb-2">{member.name}</h3>
                 <p className="text-[#ff0000] text-sm uppercase tracking-wider mb-4">{member.role}</p>

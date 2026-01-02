@@ -64,28 +64,16 @@ export default function ValuesPage() {
 
   const teamMembers = [
     {
-      name: "Alex Chen",
-      role: "Founder & CEO",
+      name: "Keshav Kumar Jha",
+      role: "Founder",
       color: "bg-[#00ff00]",
-      bio: "Alex founded MetroMint to help creators and startups build authentic brands through strategic content."
+      bio: "Keshav founded MetroMint to help creators and startups build authentic brands through strategic AI-powered content and automation."
     },
     {
-      name: "Jordan Rivera",
-      role: "Head of Strategy",
-      color: "bg-[#0088ff]",
-      bio: "Jordan brings 10+ years of digital marketing expertise, specializing in growth hacking and community building."
-    },
-    {
-      name: "Sam Taylor",
-      role: "Creative Director",
-      color: "bg-[#ff0000]",
-      bio: "Sam leads our creative vision, ensuring every piece of content tells a compelling story that resonates."
-    },
-    {
-      name: "Morgan Lee",
-      role: "Automation Lead",
+      name: "Aakriti Kaushik",
+      role: "Co-Founder & Creative Director",
       color: "bg-[#ff00ff]",
-      bio: "Morgan architects our AI-powered workflows, making consistent content feel effortless for clients."
+      bio: "Aakriti leads our creative vision, ensuring every piece of content tells a compelling story that resonates with audiences."
     }
   ];
 
@@ -182,29 +170,26 @@ export default function ValuesPage() {
             </h2>
           </motion.div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="flex flex-col md:flex-row gap-12 md:gap-20 justify-center items-start max-w-4xl mx-auto">
             {teamMembers.map((member, index) => (
               <motion.div 
                 key={index}
-                initial={{ opacity: 0, y: 40 }}
+                initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ duration: 0.8, delay: index * 0.1, ease: [0.16, 1, 0.3, 1] }}
-                className="group"
+                transition={{ duration: 0.8, delay: index * 0.15, ease: [0.16, 1, 0.3, 1] }}
+                className="flex-1 text-center"
               >
-                <div className={`aspect-square ${member.color} mb-4 relative overflow-hidden`}>
-                  <div className="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-colors duration-300"></div>
-                  <div className="absolute inset-0 flex items-center justify-center">
-                    <div className="grid grid-cols-8 gap-1 opacity-50">
-                      {[...Array(64)].map((_, i) => (
-                        <div key={i} className="w-2 h-2 rounded-full bg-white/30"></div>
-                      ))}
-                    </div>
+                <div className={`w-24 h-24 mx-auto mb-6 rounded-full ${member.color} flex items-center justify-center`}>
+                  <div className="w-16 h-16 rounded-full border-2 border-white/30 flex items-center justify-center">
+                    <span className="text-white font-display font-bold text-2xl">
+                      {member.name.split(' ').map(n => n[0]).join('')}
+                    </span>
                   </div>
                 </div>
-                <h3 className="font-medium text-white mb-1">{member.name}</h3>
-                <p className="text-sm text-text-dim mb-4">{member.role}</p>
-                <p className="text-sm text-text-dim leading-relaxed">{member.bio}</p>
+                <h3 className="font-display font-semibold text-2xl text-white mb-2">{member.name}</h3>
+                <p className="text-[#ff0000] text-sm uppercase tracking-wider mb-4">{member.role}</p>
+                <p className="text-white/60 text-sm leading-relaxed max-w-xs mx-auto">{member.bio}</p>
               </motion.div>
             ))}
           </div>

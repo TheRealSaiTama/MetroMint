@@ -4,6 +4,8 @@ import Home from './pages/Home';
 import ServicesPage from './pages/ServicesPage';
 import ValuesPage from './pages/ValuesPage';
 
+import ContactPage from './pages/ContactPage';
+
 function App() {
   return (
     <BrowserRouter>
@@ -12,6 +14,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/services" element={<ServicesPage />} />
           <Route path="/values" element={<ValuesPage />} />
+          <Route path="/contact" element={<ContactPage />} />
         </Routes>
       </Layout>
     </BrowserRouter>

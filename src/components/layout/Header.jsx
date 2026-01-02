@@ -13,10 +13,10 @@ export default function Header() {
       className: "hover:bg-[#ff0000] hover:border-[#ff0000] hover:text-black" 
     },
     { 
-      to: "/#contact", 
+      to: "/contact", 
       label: "Contact", 
       className: "hover:bg-white hover:border-white hover:text-black",
-      isAnchor: true
+      isAnchor: false
     },
   ];
 

@@ -1,15 +1,20 @@
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Layout from './components/layout/Layout';
-import Hero from './components/sections/Hero';
-import Values from './components/sections/Values';
-import Services from './components/sections/Services';
+import Home from './pages/Home';
+import ServicesPage from './pages/ServicesPage';
+import ValuesPage from './pages/ValuesPage';
 
 function App() {
   return (
-    <Layout>
-      <Hero />
-      <Values />
-      <Services />
-    </Layout>
+    <BrowserRouter>
+      <Layout>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/services" element={<ServicesPage />} />
+          <Route path="/values" element={<ValuesPage />} />
+        </Routes>
+      </Layout>
+    </BrowserRouter>
   );
 }
 

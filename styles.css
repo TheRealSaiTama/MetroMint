@@ -238,7 +238,7 @@ a {
     right: 0;
     height: var(--footer-height);
     z-index: 1;
-    background: #121212;
+    background: #252525;
     display: flex;
     align-items: center;
     padding-bottom: 40px;

@@ -24,16 +24,17 @@ export default function Hero() {
       </motion.div>
 
       <div className="container mx-auto px-5 md:px-10 z-10 pt-[100px] text-left">
-        <h1 className="font-display font-semibold text-[clamp(3rem,7vw,7rem)] leading-[0.95] tracking-tight">
-          <span className="block">Crafting your vision</span>
-          <span className="block">one dot at a time.</span>
+        <h1 className="font-display font-semibold text-[clamp(2.5rem,6vw,7rem)] leading-[0.95] tracking-tight">
+          <span className="block">Perfecting digital</span>
+          <span className="block">presence with AI.</span>
         </h1>
       </div>
 
       <div className="absolute bottom-[60px] left-5 right-5 md:left-10 md:right-10 max-w-[1600px] mx-auto z-10">
-        <div className="max-w-[800px]">
-           <p className="text-[1.1rem] md:text-[1.5rem] leading-[1.4]">
-             From pioneering AI workflows to advancing growth strategies — MetroMint brings your inspiration to life. 
+        <div className="max-w-[900px]">
+           <p className="text-[1.1rem] md:text-[1.5rem] leading-[1.4] text-white/90">
+             We manage digital identities for brands like <b>SNK</b>, <b>Tapasya</b>, and <b>IMB360</b>. 
+             From AI avatars to Meta ads—we handle it all, perfectly.
              <a href="#about" className="ml-2 text-text-dim hover:text-white transition-colors text-[1.2rem]">
                Learn More →
              </a>

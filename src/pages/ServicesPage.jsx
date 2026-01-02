@@ -28,27 +28,27 @@ export default function ServicesPage() {
   const services = [
     {
       number: "1",
-      title: "Content Strategy & Creation",
-      description: "We craft compelling, on-brand content that resonates with your audience and drives engagement across all platforms."
+      title: "AI Avatars & Influencers",
+      description: "We create hyper-realistic AI-generated avatars and influencers that embody your brand's identity and engage audiences 24/7."
     },
     {
       number: "2",
-      title: "Growth & Analytics",
-      description: "Data-driven strategies that attract the right audience and convert followers into loyal customers."
+      title: "Social Media & Account Management",
+      description: "We take full care of your IDs. From content creation to posting and community management—we do it all perfectly."
     },
     {
       number: "3",
-      title: "Automation & Workflows",
-      description: "Streamlined systems that handle lead capture, follow-ups, and engagement while you focus on your business."
+      title: "Meta Ads & Performance",
+      description: "Precision-targeted campaigns designed to maximize ROI, driving real traffic and conversions for your business."
     }
   ];
 
   const howWeDoIt = [
-    "Understanding your brand voice and goals",
-    "Creating tailored content calendars",
-    "Implementing smart automation workflows",
-    "Continuous optimization based on analytics",
-    "24/7 engagement monitoring"
+    "Analyzing your brand DNA & goals",
+    "Generating custom AI avatars & assets",
+    "Executing precision Meta ad campaigns",
+    "Flawless account management & posting",
+    "Continuous optimization & perfection"
   ];
 
   return (
@@ -59,11 +59,11 @@ export default function ServicesPage() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1], delay: 0.4 }}
-            className="font-display font-semibold text-[clamp(2.5rem,5vw,5rem)] leading-[1.1] tracking-tight text-white max-w-[900px]"
+            className="font-display font-semibold text-[clamp(2.5rem,5vw,5rem)] leading-[1.1] tracking-tight text-white max-w-[1100px]"
           >
-            We create tailor-made digital solutions so you can focus on your core business.
+            We create AI-generated avatars, run precision Meta ads, and manage your entire digital existence.
           </motion.h1>
-        </div>
+         </div>
       </section>
 
       <section className="py-20 bg-bg">

@@ -36,28 +36,27 @@ export default function ValuesPage() {
       navTitle: "Who we are",
       title: "1. Who we are",
       content: [
-        "MetroMint has been pioneering AI-powered content strategies for startups and creators—helping brands stay consistent without burning out.",
-        "This is our mission.",
-        "This legacy, blending technical expertise with a creative, human-first approach, is the very DNA of MetroMint, where strategic automation serves the brand's storytelling."
+        "MetroMint is the strategic partner for forward-thinking brands like SNK, Tapasya, and IMB360. We don't just execute; we own the outcome.",
+        "We are the architects of your digital existence.",
+        "From creating AI influencers to managing complex ad ecosystems, our specialized team becomes an extension of yours—ensuring perfection in every post, every ad, and every interaction."
       ]
     },
     {
       navTitle: "What we think",
       title: "2. What we think",
       content: [
-        "Regardless of the platform, what really matters is the story and its perfect delivery to create an authentic connection.",
-        "That is our vision.",
-        "At MetroMint, we stand beside our clients as true partners. We recognize the strategic role that consistent content has as the primary means of building trust with customers."
+        "In a crowded digital space, average is invisible. Perfection is the only standard that matters.",
+        "That is our philosophy.",
+        "We believe that true growth comes from the seamless integration of human creativity and AI precision. Whether it's managing your IDs or scaling your ads, we do it flawlessly so you never have to worry."
       ]
     },
     {
       navTitle: "What we stand for",
       title: "3. What we stand for",
       content: [
-        "Excellence. Agility. Trust. Commitment.",
-        "Those are our values.",
-        "Because client satisfaction is our DNA, we always strive to offer you the best possible solution, no matter what.",
-        "It is equally essential for us to be reliable partners for our clients and to establish trusting relationships built on transparency and results."
+        "Innovation. Precision. Ownership. Perfection.",
+        "These are our non-negotiables.",
+        "We stand for complete accountability. When we take on your brand—whether it's generating avatars or running Meta ads—we treat it with the same care and ambition as if it were our own."
       ]
     }
   ];

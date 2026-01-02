@@ -1,16 +1,16 @@
 export default function Services() {
   const services = [
     {
-      title: "Social Content",
-      description: "Consistent, on-brand posts that keep your audience engaged without you lifting a finger."
+      title: "AI Avatars & Influencers",
+      description: "Custom AI-generated personas and influencers that represent your brand 24/7."
     },
     {
-      title: "Growth Strategy",
-      description: "Clear, actionable plans to attract the right audience and turn followers into customers."
+      title: "Meta Ads & Performance",
+      description: "High-ROI ad campaigns targeting your exact audience for maximum conversion."
     },
     {
-      title: "Smart Automation",
-      description: "Lead capture forms, WhatsApp auto-replies, and workflows that work while you sleep."
+      title: "Complete Management",
+      description: "From post creation to handling your IDs—we do it all perfectly."
     }
   ];
 

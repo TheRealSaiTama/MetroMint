@@ -8,17 +8,22 @@ export default function ValuesPage() {
 
   useEffect(() => {
     if (!vantaEffect && window.VANTA) {
-      setVantaEffect(window.VANTA.TOPOLOGY({
+      setVantaEffect(window.VANTA.FOG({
         el: vantaRef.current,
         mouseControls: true,
         touchControls: true,
         gyroControls: false,
         minHeight: 200.00,
         minWidth: 200.00,
-        scale: 1.00,
-        scaleMobile: 1.00,
-        color: 0xff0000,
-        backgroundColor: 0x990000
+        highlightColor: 0xff0000,
+        midtoneColor: 0xff0000,
+        lowlightColor: 0xff0000,
+        baseColor: 0xfff7eb,
+        blurFactor: 0.43,
+        speed: 1.5,
+        zoom: 2,
+        scale: 2.00,
+        scaleMobile: 4.00
       }));
     }
     return () => {

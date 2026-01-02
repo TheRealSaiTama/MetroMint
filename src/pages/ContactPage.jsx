@@ -1,4 +1,27 @@
+import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
+import EncryptedText from '../components/ui/EncryptedText';
+
+function TimeDisplay() {
+  const [time, setTime] = useState(new Date());
+
+  useEffect(() => {
+    const timer = setInterval(() => setTime(new Date()), 1000);
+    return () => clearInterval(timer);
+  }, []);
+
+  return (
+    <div className="font-mono text-sm text-text-dim">
+      {time.toLocaleTimeString('en-US', { 
+        hour: '2-digit', 
+        minute: '2-digit', 
+        second: '2-digit',
+        hour12: true, 
+        timeZone: 'Asia/Kolkata' 
+      })} IST
+    </div>
+  );
+}
 
 export default function ContactPage() {
   return (
@@ -11,14 +34,26 @@ export default function ContactPage() {
 
       <div className="container mx-auto px-5 md:px-10 relative z-10">
         <div className="max-w-4xl mx-auto">
-          <motion.h1 
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-            className="font-display font-bold text-[clamp(3rem,6vw,6rem)] leading-[0.9] tracking-tight mb-20 text-center"
-          >
-            Let&apos;s talk.
-          </motion.h1>
+          <div className="flex flex-col md:flex-row justify-between items-end mb-20 gap-8">
+            <motion.h1 
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
+              className="font-display font-bold text-[clamp(3rem,6vw,6rem)] leading-[0.9] tracking-tight"
+            >
+              Let&apos;s talk.
+            </motion.h1>
+            
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 0.8, duration: 1 }}
+              className="text-right"
+            >
+              <div className="text-xs uppercase tracking-widest text-text-dim mb-1">Local Time (HQ)</div>
+              <TimeDisplay />
+            </motion.div>
+          </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-16 md:gap-24 items-start">
             {/* Contact Details */}
@@ -29,7 +64,9 @@ export default function ContactPage() {
               className="space-y-12"
             >
               <div>
-                <h2 className="text-sm font-medium text-text-dim uppercase tracking-wider mb-4">Visit Us</h2>
+                <h2 className="text-sm font-medium text-text-dim uppercase tracking-wider mb-4">
+                  <EncryptedText text="Visit Us" />
+                </h2>
                 <p className="text-2xl font-light leading-relaxed">
                   Sector-37,<br />
                   Faridabad,<br />
@@ -38,22 +75,26 @@ export default function ContactPage() {
               </div>
 
               <div>
-                <h2 className="text-sm font-medium text-text-dim uppercase tracking-wider mb-4">Call Us</h2>
+                <h2 className="text-sm font-medium text-text-dim uppercase tracking-wider mb-4">
+                   <EncryptedText text="Call Us" />
+                </h2>
                 <a 
                   href="tel:+919599015933" 
-                  className="text-2xl font-light hover:text-white/70 transition-colors"
+                  className="text-2xl font-light hover:text-white/70 transition-colors block w-fit"
                 >
                   +91 95990 15933
                 </a>
               </div>
 
               <div>
-                <h2 className="text-sm font-medium text-text-dim uppercase tracking-wider mb-4">Email</h2>
+                <h2 className="text-sm font-medium text-text-dim uppercase tracking-wider mb-4">
+                   <EncryptedText text="Email" />
+                </h2>
                 <a 
-                  href="mailto:hello@metromint.in" 
-                  className="text-2xl font-light hover:text-white/70 transition-colors"
+                  href="mailto:keshavsde@gmail.com" 
+                  className="text-2xl font-light hover:text-white/70 transition-colors block w-fit"
                 >
-                  hello@metromint.in
+                  keshavsde@gmail.com
                 </a>
               </div>
             </motion.div>

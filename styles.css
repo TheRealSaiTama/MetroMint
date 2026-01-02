@@ -238,7 +238,7 @@ a {
     right: 0;
     height: var(--footer-height);
     z-index: 1;
-    background: #252525;
+    background: #232323;
     display: flex;
     align-items: center;
     padding-bottom: 40px;
@@ -253,14 +253,14 @@ a {
 
 .footer-col h4 {
     font-size: 1rem;
-    color: var(--color-text-dim);
+    color: rgba(217, 217, 217, 0.6); /* D9D9D9 with opacity for header? Or just D9D9D9? Let's use dim for headers */
     margin-bottom: 15px;
 }
 
 .footer-col p, .footer-link {
     font-size: 1rem;
     line-height: 1.5;
-    color: #fff;
+    color: #D9D9D9; /* The specific color requested */
 }
 
 .footer-link {

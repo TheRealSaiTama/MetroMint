@@ -1,8 +1,20 @@
 export default function Header() {
   const links = [
-    { href: "#services", label: "What We Do" },
-    { href: "#values", label: "Our DNA" },
-    { href: "#contact", label: "Contact" },
+    { 
+      href: "#services", 
+      label: "What We Do", 
+      className: "hover:bg-[#00ff00] hover:border-[#00ff00] hover:text-black" 
+    },
+    { 
+      href: "#values", 
+      label: "Our DNA", 
+      className: "hover:bg-[#ff0000] hover:border-[#ff0000] hover:text-black" 
+    },
+    { 
+      href: "#contact", 
+      label: "Contact", 
+      className: "hover:bg-white hover:border-white hover:text-black" 
+    },
   ];
 
   return (
@@ -20,7 +32,7 @@ export default function Header() {
             <a
               key={link.href}
               href={link.href}
-              className="pointer-events-auto bg-black border border-white/20 px-6 py-3 text-sm font-medium uppercase tracking-wider transition-all duration-300 hover:bg-white hover:text-black hover:border-white"
+              className={`pointer-events-auto bg-black border border-white/20 px-6 py-3 text-sm font-medium uppercase tracking-wider transition-all duration-300 ${link.className}`}
             >
               {link.label}
             </a>
